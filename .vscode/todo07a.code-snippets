@@ -1,0 +1,10 @@
+{
+	"Delete Todo": {
+		"scope": "javascript",
+		"prefix": "s07a",
+		"body": [
+      "dispatch({ type: 'DELETE_TODO', id });"
+		],
+		"description": "todo-app deleteTodo dispatch"
+	}
+}

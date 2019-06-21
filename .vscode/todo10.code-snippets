@@ -1,0 +1,10 @@
+{
+	"Thanks": {
+		"scope": "javascript",
+		"prefix": "s10",
+		"body": [
+      "/* Thanks React Loop! */"
+		],
+		"description": "todo-app thanks"
+	}
+}

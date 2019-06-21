@@ -1,0 +1,10 @@
+{
+	"Redirect on toHome": {
+		"scope": "javascript",
+		"prefix": "s09a",
+		"body": [
+      "{toHome ? <Redirect to=\"/\" /> : null}"
+		],
+		"description": "todo-app add toHome redirect"
+	}
+}

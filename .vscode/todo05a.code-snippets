@@ -1,0 +1,16 @@
+{
+	"Dispatch Object": {
+		"scope": "javascript",
+		"prefix": "s05a",
+		"body": [
+			"event.preventDefault();",
+			"dispatch({",
+			"  type: 'ADD_TODO',",
+			"  name: inputRef.current.value,",
+			"  complete: false",
+			"});",
+			"inputRef.current.value = '';"
+		],
+		"description": "todo-app "
+	}
+}

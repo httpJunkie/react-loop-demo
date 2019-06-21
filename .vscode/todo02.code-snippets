@@ -1,0 +1,11 @@
+{
+	"Setup completedTodos and inputRef": {
+		"scope": "javascript",
+		"prefix": "s02",
+		"body": [
+      "const completedTodos = todos.filter((todo) => todo.complete);",
+      "const inputRef = useRef();"
+		],
+		"description": "todo-app completedTodos and inputRef (useRef())"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"Toggle Complete": {
+		"scope": "javascript",
+		"prefix": "s06a",
+		"body": [
+      "dispatch({ type: 'TOGGLE_COMPLETE', id });"
+		],
+		"description": "todo-app toggleComplete dispatch"
+	}
+}

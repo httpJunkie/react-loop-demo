@@ -1,0 +1,10 @@
+{
+	"DOM Reference": {
+		"scope": "javascript",
+		"prefix": "s04",
+		"body": [
+      "ref={inputRef}"
+		],
+		"description": "todo-app set ref attribute"
+	}
+}

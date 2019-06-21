@@ -1,0 +1,10 @@
+{
+	"Redirect State Hook": {
+		"scope": "javascript",
+		"prefix": "s01",
+		"body": [
+      "const [toHome, setToHome] = useState(false);"
+		],
+		"description": "todo-app toHome state hook"
+	}
+}

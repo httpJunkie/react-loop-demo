@@ -1,0 +1,16 @@
+{
+	"Add_Todo Reducer Result": {
+		"scope": "javascript",
+		"prefix": "s05b",
+		"body": [
+			"(action.name.length)",
+			"  ? [...state, {",
+			"    id: state.length ? Math.max(...state.map((todo) => todo.id)) + 1 : 0,",
+			"    name: action.name,",
+			"    complete: action.complete",
+			"  }]",
+			"  : state"
+		],
+		"description": "todo-app Add_Todo reducer result"
+	}
+}

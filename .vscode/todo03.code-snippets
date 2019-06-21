@@ -1,0 +1,12 @@
+{
+	"Use Effect": {
+		"scope": "javascript",
+		"prefix": "s03",
+		"body": [
+      "useEffect(() => {",
+      "  document.title = `${completedTodos.length} completed todos`;",
+      "});"
+		],
+		"description": "todo-app useEffect"
+	}
+}

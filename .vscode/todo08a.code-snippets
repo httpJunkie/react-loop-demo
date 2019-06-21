@@ -1,0 +1,11 @@
+{
+	"Clear Todos": {
+		"scope": "javascript",
+		"prefix": "s08a",
+		"body": [
+      "dispatch({ type: 'CLEAR_TODOS' });",
+      "setTimeout(() => setToHome(true), 2000)"
+		],
+		"description": "todo-app clearTodos dispatch and setHome true"
+	}
+}

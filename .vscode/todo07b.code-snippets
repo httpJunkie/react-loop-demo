@@ -1,0 +1,10 @@
+{
+	"Delete Todo Reducer Result": {
+		"scope": "javascript",
+		"prefix": "s07b",
+		"body": [
+      "state.filter((todo) => todo.id !== action.id);"
+		],
+		"description": "todo-app deleteTodo reducer result"
+	}
+}
