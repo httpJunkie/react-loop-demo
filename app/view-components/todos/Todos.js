@@ -9,27 +9,41 @@ const initialState = [...constants.TODO_SEED];
 
 const Todo = () => {
   const [todos, dispatch] = useReducer(todoReducer, initialState);
-  /* #01 #02 #03 */
+  const [toHome, setToHome] = useState(false);
+  
+  const completedTodos = todos.filter((todo) => todo.complete);
+  const inputRef = useRef();
+  
+  useEffect(() => {
+    document.title = `${completedTodos.length} completed todos`;
+  });
 
   function addTodo(event) {
-    /* #05 */
+    event.preventDefault();
+    dispatch({
+      type: 'ADD_TODO',
+      name: inputRef.current.value,
+      complete: false
+    });
+    inputRef.current.value = '';
   }
   function toggleComplete(id) {
-    /* #06 */
+    dispatch({ type: 'TOGGLE_COMPLETE', id });
   }
   function deleteTodo(id) {
-    /* #07 */
+    dispatch({ type: 'DELETE_TODO', id });
   }
   function clearTodos() {
-    /* #08 */
+    dispatch({ type: 'CLEAR_TODOS' });
+    setTimeout(() => setToHome(true), 2000)
   }
 
   return (
     <>
-      {/** #09 */}
+      {toHome ? <Redirect to="/" /> : null}
       <div className="todo-input">
         <form onSubmit={addTodo}>
-          <input /** #04 */ type="search" id="add-todo" placeholder="Add Todo..." autoComplete="off" />
+          <input ref={inputRef} type="search" id="add-todo" placeholder="Add Todo..." autoComplete="off" />
         </form>
       </div>
       <div className="todo-container">

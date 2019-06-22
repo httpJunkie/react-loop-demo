@@ -1,16 +1,26 @@
 export const todoReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_TODO': {
-      return null;
+      return (action.name.length)
+        ? [...state, {
+          id: state.length ? Math.max(...state.map((todo) => todo.id)) + 1 : 0,
+          name: action.name,
+          complete: action.complete
+        }]
+        : state;
     }
     case 'TOGGLE_COMPLETE': {
-      return null;
+      return state.map((item) =>
+        item.id === action.id
+          ? { ...item, complete: !item.complete }
+          : item
+      );
     }
     case 'DELETE_TODO': {
-      return null;
+      return state.filter((todo) => todo.id !== action.id);;
     }
     case 'CLEAR_TODOS': {
-      return null;
+      return [];
     }
     default: {
       return state;
