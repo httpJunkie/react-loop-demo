@@ -3,8 +3,8 @@
 		"scope": "javascript",
 		"prefix": "s10",
 		"body": [
-      "/* Thanks React Loop! */"
+      "const fiveCompletedTodos = (completedTodos.length > 5) ? true : false;"
 		],
-		"description": "todo-app thanks"
+		"description": "todo-app fiveComplete contrived"
 	}
 }
