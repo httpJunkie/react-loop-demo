@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { useMediaPredicate } from 'react-media-hook';
+import { getCurrentDate } from './utils/date'
 
 import './App.css';
 import logo from './images/logo.png';
@@ -16,6 +17,7 @@ import TopNav from './partial-components/Topnav';
 
 const App = () => {
   let isMediumPlus = useMediaPredicate("(min-width: 600px)") ? false : true;
+  let currentDate = getCurrentDate('year', '');
 
   return (
     <AppProvider>
@@ -40,7 +42,7 @@ const App = () => {
             </section>
 
             <footer>
-              <p>The Todo Company &copy; 2019</p>
+              <p>The Todo Company &copy; {currentDate}</p>
             </footer>
 
           </main>
