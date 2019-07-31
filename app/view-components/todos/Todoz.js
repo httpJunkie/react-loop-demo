@@ -86,4 +86,3 @@ class Todoz extends React.Component {
 }
 
 export default Todoz;
-//81 lines (nospaces) 1823 (charcount)

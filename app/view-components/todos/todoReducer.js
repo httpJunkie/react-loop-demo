@@ -1,5 +1,5 @@
 export const todoReducer = (state, action) => {
-  switch (action.type) {
+switch (action.type) {
     case 'ADD_TODO': {
       return (action.name.length)
         ? [...state, {
@@ -17,7 +17,7 @@ export const todoReducer = (state, action) => {
       );
     }
     case 'DELETE_TODO': {
-      return state.filter((todo) => todo.id !== action.id);;
+      return state.filter((todo) => todo.id !== action.id);
     }
     case 'CLEAR_TODOS': {
       return [];
